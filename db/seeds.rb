@@ -52,6 +52,7 @@ the_color_purple = Movie.create(
     description: "Whoopi Goldberg brings Alice Walker’s Pulitzer Prize-winning feminist novel to life as Celie, a Southern woman who suffered abuse over decades. A project brought to a hesitant Steven Spielberg by producer Quincy Jones, the film marks Spielberg’s first female lead.",
     female_director: false
 )
+#this is movie genres [adaptation, historical_period_drama, drama]
 create_movie_joins(the_color_purple, [adaptation, historical_period_drama, drama])
 
 frida = Movie.create(
@@ -256,8 +257,6 @@ unreturned_still_late.times do
     index += 1
     rental.update(current: true, created_at: date, updated_at: date)
 end
-
-
 
 
 puts "📼 📼 📼 📼 SEEDED 📼 📼 📼 📼 "

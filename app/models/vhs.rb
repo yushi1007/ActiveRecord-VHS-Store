@@ -4,6 +4,10 @@ class Vhs < ActiveRecord::Base
     has_many :rentals
     has_many :clients, through: :rentals
 
+def number_of_rentals
+    self.rentals.count
+end
+
     private
 
     # generates serial number based on the title
