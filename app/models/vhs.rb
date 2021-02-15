@@ -8,6 +8,9 @@ def number_of_rentals
     self.rentals.count
 end
 
+def self.most_used
+
+end
     private
 
     # generates serial number based on the title
